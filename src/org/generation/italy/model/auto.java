@@ -8,6 +8,8 @@ public class auto extends veicolo {
 		super(marca, anno, cilindrata);
 		if (porte<=5 || porte>=3)
 			this.porte = porte;
+		else 
+			throw new Exception("Porte non valide");
 		if (alimentazione.equals("disiel")||alimentazione.equals("benzina"))
 			this.alimentazione = alimentazione;
 		else 
